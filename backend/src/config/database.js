@@ -130,6 +130,84 @@ function initializeDatabase() {
       FOREIGN KEY (user_id) REFERENCES users(id),
       FOREIGN KEY (complaint_id) REFERENCES complaints(id)
     );
+
+    CREATE TABLE IF NOT EXISTS etl_run_log (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      run_at TEXT NOT NULL,
+      status TEXT NOT NULL,
+      rows_extracted INTEGER DEFAULT 0,
+      rows_loaded INTEGER DEFAULT 0,
+      error_message TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS analytics_complaints (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      complaint_id INTEGER NOT NULL,
+      complaint_number TEXT,
+      complaint_category TEXT,
+      priority TEXT,
+      status TEXT,
+      agent_name TEXT,
+      created_date TEXT,
+      resolved_date TEXT,
+      sla_hours INTEGER,
+      resolution_time_hours REAL,
+      resolution_days REAL,
+      is_sla_breached INTEGER DEFAULT 0,
+      customer_region TEXT,
+      product_line TEXT,
+      feedback_rating REAL,
+      month_year TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS analytics_sla_report (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      priority TEXT NOT NULL,
+      sla_hours INTEGER NOT NULL,
+      total_complaints INTEGER DEFAULT 0,
+      breached_count INTEGER DEFAULT 0,
+      within_sla_count INTEGER DEFAULT 0,
+      breach_rate_pct REAL DEFAULT 0.0,
+      avg_resolution_hours REAL,
+      last_updated TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS analytics_category_stats (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      category TEXT NOT NULL,
+      total_complaints INTEGER DEFAULT 0,
+      resolved_count INTEGER DEFAULT 0,
+      escalated_count INTEGER DEFAULT 0,
+      breached_count INTEGER DEFAULT 0,
+      avg_resolution_hours REAL,
+      avg_feedback_rating REAL,
+      last_updated TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS analytics_agent_performance (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      agent_name TEXT NOT NULL,
+      total_assigned INTEGER DEFAULT 0,
+      resolved_count INTEGER DEFAULT 0,
+      escalated_count INTEGER DEFAULT 0,
+      breached_count INTEGER DEFAULT 0,
+      avg_resolution_hours REAL,
+      avg_feedback_rating REAL,
+      resolution_rate_pct REAL DEFAULT 0.0,
+      last_updated TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS analytics_monthly_trends (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      month_year TEXT NOT NULL,
+      total_complaints INTEGER DEFAULT 0,
+      resolved_count INTEGER DEFAULT 0,
+      escalated_count INTEGER DEFAULT 0,
+      breached_count INTEGER DEFAULT 0,
+      avg_resolution_hours REAL,
+      new_complaints INTEGER DEFAULT 0,
+      last_updated TEXT
+    );
   `);
 
   seedData();

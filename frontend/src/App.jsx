@@ -17,6 +17,7 @@ import UserManagement from './pages/admin/UserManagement'
 import Notifications from './pages/Notifications'
 import Profile from './pages/Profile'
 import LoadingSpinner from './components/common/LoadingSpinner'
+import Analytics from './pages/Analytics'
 
 function ProtectedRoute({ children, roles }) {
   const { isAuthenticated, user, loading } = useAuth()
@@ -70,6 +71,14 @@ function AppRoutes() {
           element={
             <ProtectedRoute roles={['admin', 'supervisor', 'quality']}>
               <Reports />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="analytics"
+          element={
+            <ProtectedRoute roles={['admin', 'supervisor', 'quality']}>
+              <Analytics />
             </ProtectedRoute>
           }
         />

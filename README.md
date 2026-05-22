@@ -16,6 +16,7 @@ A full-stack web application for centralized management of customer complaints �
 - [Getting Started](#getting-started)
 - [API Overview](#api-overview)
 - [Demo Credentials](#demo-credentials)
+- [Phase 2 — ETL Analytics](#phase-2--etl-analytics)
 - [Future Enhancements](#future-enhancements)
 
 ---
@@ -275,6 +276,120 @@ All demo accounts use the password `Admin@123`.
 | Quality Team | quality@system.com |
 
 The database is pre-seeded with 5 sample complaints across different statuses and priorities.
+
+---
+
+## Phase 2 — ETL Analytics
+
+Phase 2 extends the platform with an ETL-powered analytics layer. A Python/Pandas pipeline extracts 220 complaint records from a CSV dataset, transforms and validates the data, and loads aggregated statistics into 6 new SQLite tables. A dedicated **ETL Analytics** dashboard surfaces these insights for admin, supervisor, and quality roles.
+
+---
+
+### What's New in Phase 2
+
+- **Python ETL Pipeline** — 3-stage Extract → Transform → Load pipeline with full error handling and run logging
+- **220-record Dataset** — Realistic 2024 complaint dataset spanning all 12 months with categories, priorities, agents, regions, and SLA data
+- **6 Analytics Tables** — Pre-aggregated reporting tables populated by the ETL pipeline
+- **7 New API Endpoints** — `/api/analytics/*` serving ETL-powered data
+- **4-Tab Analytics Dashboard** — Overview, SLA Analysis, Category Breakdown, Agent Performance
+
+---
+
+### Phase 2 Tech Stack
+
+| Component | Technology |
+|---|---|
+| ETL Pipeline | Python 3.8+, Pandas 2.x |
+| ETL Storage | SQLite (6 new analytics tables via `load.py`) |
+| Analytics API | Node.js / Express (`backend/src/routes/analytics.js`) |
+| Analytics UI | React 18, Recharts (line, bar, pie charts) |
+| Dataset | CSV — 220 records, 14 columns |
+
+---
+
+### Running the ETL Pipeline
+
+**Prerequisites:** Python 3.8+ installed globally.
+
+**Step 1 — Install Python dependencies** (one time):
+```
+cd etl
+pip install -r requirements.txt
+```
+
+**Step 2 — Run the pipeline:**
+```
+python run_etl.py
+```
+
+Expected output:
+```
+====================================================
+  Customer Complaint ETL Pipeline Starting...
+====================================================
+
+[Step 1/3] Extracting data from CSV...
+[Extract] Loaded 220 rows, 14 columns
+
+[Step 2/3] Transforming and validating data...
+[Transform] 220 raw rows -> 220 clean rows
+
+[Step 3/3] Loading data into SQLite analytics tables...
+[Load] Inserted 220 rows into analytics_complaints.
+[Load] All aggregated analytics tables populated.
+
+  ETL Pipeline Complete!  Status: SUCCESS
+====================================================
+```
+
+**Step 3 — Start the app:**
+```powershell
+cd ..
+.\start.ps1
+```
+
+**Step 4 — Open Analytics:**
+Log in as admin, supervisor, or quality role → click **ETL Analytics** in the sidebar.
+
+---
+
+### Analytics Dashboard Features
+
+| Tab | Charts & Data |
+|---|---|
+| **Overview** | 4 summary stat cards · Monthly trends line chart (total/resolved/escalated) · Region pie chart + table |
+| **SLA Analysis** | Overall compliance banner with visual bar · Per-priority cards (breach rate, avg resolution) · Stacked bar chart by priority |
+| **Category Breakdown** | Top 3 category cards · Horizontal bar chart · Full category table with ratings |
+| **Agent Performance** | Top 3 agent cards · Grouped bar chart · Full agent table with resolution rates and ratings |
+
+---
+
+### Phase 2 API Endpoints
+
+All endpoints require `Authorization: Bearer <token>` and role `admin`, `supervisor`, or `quality` (except `/etl-log` which requires `admin`).
+
+| Endpoint | Description |
+|---|---|
+| `GET /api/analytics/summary` | Overall ETL dataset summary + last ETL run info |
+| `GET /api/analytics/sla-report` | SLA breach stats by priority (overall + per-priority breakdown) |
+| `GET /api/analytics/category-stats` | Complaint volume and resolution metrics per category |
+| `GET /api/analytics/agent-performance` | Resolution rates, avg resolution time, feedback scores per agent |
+| `GET /api/analytics/monthly-trends` | Month-by-month complaint and resolution counts for 2024 |
+| `GET /api/analytics/region-stats` | Complaint volume and breach count by customer region |
+| `GET /api/analytics/etl-log` | ETL run history — last 20 executions (admin only) |
+
+---
+
+### Phase 2 Database Tables
+
+| Table | Populated by | Purpose |
+|---|---|---|
+| `etl_run_log` | `run_etl.py` | Log of every ETL execution (status, row counts, errors) |
+| `analytics_complaints` | `load.py` | Full row-level clean complaint records from ETL |
+| `analytics_sla_report` | `load.py` | SLA compliance aggregated by priority |
+| `analytics_category_stats` | `load.py` | Complaint metrics aggregated by category |
+| `analytics_agent_performance` | `load.py` | Agent-level resolution and performance metrics |
+| `analytics_monthly_trends` | `load.py` | Monthly time-series data for 2024 |
 
 ---
 

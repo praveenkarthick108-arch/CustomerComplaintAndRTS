@@ -13,7 +13,8 @@ import {
   BellIcon,
   UserCircleIcon,
   ShieldCheckIcon,
-  ArrowRightOnRectangleIcon
+  ArrowRightOnRectangleIcon,
+  PresentationChartLineIcon
 } from '@heroicons/react/24/outline'
 
 function hasRole(user, ...roles) {
@@ -44,12 +45,16 @@ export default function Sidebar() {
   if (hasRole(user, 'supervisor', 'admin')) {
     roleNavItems.push(
       { to: '/escalations', label: 'Escalations', icon: ExclamationTriangleIcon },
-      { to: '/reports', label: 'Reports', icon: ChartBarIcon }
+      { to: '/reports', label: 'Reports', icon: ChartBarIcon },
+      { to: '/analytics', label: 'ETL Analytics', icon: PresentationChartLineIcon }
     )
   }
 
   if (hasRole(user, 'quality')) {
-    roleNavItems.push({ to: '/reports', label: 'Reports', icon: ChartBarIcon })
+    roleNavItems.push(
+      { to: '/reports', label: 'Reports', icon: ChartBarIcon },
+      { to: '/analytics', label: 'ETL Analytics', icon: PresentationChartLineIcon }
+    )
   }
 
   if (hasRole(user, 'admin')) {

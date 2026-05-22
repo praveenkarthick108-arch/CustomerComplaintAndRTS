@@ -18,6 +18,17 @@ if ($proc3001) {
   try { Stop-Process -Id ([int]$proc3001.Trim()) -Force -ErrorAction SilentlyContinue } catch {}
 }
 
+# ------------------------------------------------------------
+# Optional: Run ETL pipeline before starting servers
+# Requires Python 3.8+ and pandas installed (cd etl && pip install -r requirements.txt)
+# Uncomment the block below to run the ETL pipeline on every startup.
+# ------------------------------------------------------------
+# Write-Host "`nRunning ETL Pipeline..." -ForegroundColor Yellow
+# $etlResult = & python "$rootDir\etl\run_etl.py" 2>&1
+# Write-Host $etlResult
+# Write-Host "ETL Pipeline complete." -ForegroundColor Green
+# ------------------------------------------------------------
+
 # Start backend
 Write-Host "`nStarting Backend (port 3001)..." -ForegroundColor Yellow
 $backendProc = Start-Process -FilePath $bun -ArgumentList "server.js" -WorkingDirectory "$rootDir\backend" -PassThru -NoNewWindow

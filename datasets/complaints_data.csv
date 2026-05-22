@@ -1,0 +1,221 @@
+complaint_id,complaint_number,complaint_category,priority,status,agent_name,created_date,resolved_date,sla_hours,resolution_time_hours,is_sla_breached,customer_region,product_line,feedback_rating
+1,ETL-2024-0001,Account Issues,low,closed,John Smith,2024-09-26,2024-09-26,72,20.2,0,North,Healthcare,3.9
+2,ETL-2024-0002,Billing Issues,high,in_progress,Emily Davis,2024-08-13,,24,,0,West,Banking,
+3,ETL-2024-0003,Billing Issues,medium,resolved,John Smith,2024-11-19,2024-11-19,48,5.9,0,West,Banking,4.5
+4,ETL-2024-0004,Delivery Delays,critical,pending_customer,Sarah Johnson,2024-01-13,,4,,1,West,Retail,
+5,ETL-2024-0005,Billing Issues,high,assigned,Mike Chen,2024-11-09,,24,,0,West,Retail,
+6,ETL-2024-0006,Billing Issues,low,escalated,Carlos Ramos,2024-01-18,,72,,1,East,Banking,
+7,ETL-2024-0007,Product Defects,medium,closed,Priya Patel,2024-09-21,2024-09-23,48,57.1,1,Central,Banking,3.8
+8,ETL-2024-0008,Service Disruption,medium,closed,David Lee,2024-06-04,2024-06-04,48,13.4,0,East,Retail,5.0
+9,ETL-2024-0009,Technical Problems,high,escalated,Emma Wilson,2024-07-24,,24,,0,South,Retail,
+10,ETL-2024-0010,Customer Service Complaints,medium,closed,Emily Davis,2024-01-10,2024-01-11,48,40.5,0,South,Telecom,2.6
+11,ETL-2024-0011,Delivery Delays,high,closed,Sarah Johnson,2024-10-08,2024-10-11,24,80.2,1,Central,Telecom,5.0
+12,ETL-2024-0012,Account Issues,medium,escalated,John Smith,2024-04-14,,48,,0,North,Logistics,
+13,ETL-2024-0013,Product Defects,medium,in_progress,Mike Chen,2024-01-14,,48,,0,North,Healthcare,
+14,ETL-2024-0014,Technical Problems,medium,assigned,Carlos Ramos,2024-08-14,,48,,0,Central,Retail,
+15,ETL-2024-0015,Technical Problems,medium,resolved,Priya Patel,2024-11-25,2024-11-25,48,21.9,0,South,Telecom,3.7
+16,ETL-2024-0016,Billing Issues,medium,closed,David Lee,2024-06-25,2024-06-26,48,28.8,0,West,Retail,3.3
+17,ETL-2024-0017,Service Disruption,low,pending_customer,Emma Wilson,2024-10-06,,72,,0,East,Retail,
+18,ETL-2024-0018,Technical Problems,high,open,Emily Davis,2024-11-23,,24,,0,Central,Telecom,
+19,ETL-2024-0019,Technical Problems,critical,resolved,Sarah Johnson,2024-02-08,2024-02-08,4,2.0,0,West,Healthcare,3.9
+20,ETL-2024-0020,Technical Problems,high,closed,Emily Davis,2024-03-13,2024-03-13,24,8.4,0,Central,Retail,2.7
+21,ETL-2024-0021,Customer Service Complaints,critical,open,Mike Chen,2024-07-14,,4,,0,Central,Retail,
+22,ETL-2024-0022,Product Defects,low,closed,Priya Patel,2024-06-10,2024-06-10,72,14.3,0,Central,Banking,3.9
+23,ETL-2024-0023,Billing Issues,low,closed,David Lee,2024-09-09,2024-09-11,72,64.9,0,Central,Logistics,4.1
+24,ETL-2024-0024,Account Issues,critical,assigned,Emma Wilson,2024-01-07,,4,,0,East,Banking,
+25,ETL-2024-0025,Product Defects,low,assigned,Carlos Ramos,2024-09-05,,72,,0,North,Logistics,
+26,ETL-2024-0026,Billing Issues,critical,closed,John Smith,2024-12-21,2024-12-21,4,2.0,0,West,Healthcare,4.4
+27,ETL-2024-0027,Billing Issues,medium,assigned,Sarah Johnson,2024-02-02,,48,,0,West,Telecom,
+28,ETL-2024-0028,Customer Service Complaints,high,in_progress,Emma Wilson,2024-06-19,,24,,0,North,Banking,
+29,ETL-2024-0029,Technical Problems,critical,closed,Mike Chen,2024-07-10,2024-07-10,4,7.3,1,Central,Healthcare,3.1
+30,ETL-2024-0030,Account Issues,low,closed,Priya Patel,2024-09-08,2024-09-09,72,29.7,0,Central,Healthcare,4.3
+31,ETL-2024-0031,Service Disruption,medium,escalated,David Lee,2024-08-20,,48,,0,North,Banking,
+32,ETL-2024-0032,Delivery Delays,critical,resolved,Carlos Ramos,2024-03-03,2024-03-03,4,6.4,1,North,Banking,3.5
+33,ETL-2024-0033,Service Disruption,high,closed,John Smith,2024-06-20,2024-06-20,24,3.0,0,West,Telecom,3.7
+34,ETL-2024-0034,Delivery Delays,high,resolved,Emily Davis,2024-11-26,2024-11-26,24,14.0,0,South,Healthcare,4.4
+35,ETL-2024-0035,Billing Issues,critical,resolved,Sarah Johnson,2024-03-05,2024-03-05,4,3.1,0,East,Logistics,4.2
+36,ETL-2024-0036,Account Issues,medium,open,Priya Patel,2024-05-15,,48,,0,West,Retail,
+37,ETL-2024-0037,Technical Problems,critical,in_progress,Mike Chen,2024-06-03,,4,,0,West,Retail,
+38,ETL-2024-0038,Product Defects,critical,pending_customer,David Lee,2024-01-08,,4,,0,Central,Logistics,
+39,ETL-2024-0039,Product Defects,low,resolved,Priya Patel,2024-07-25,2024-07-26,72,35.0,0,West,Retail,4.0
+40,ETL-2024-0040,Customer Service Complaints,medium,closed,Emma Wilson,2024-07-21,2024-07-22,48,42.9,0,East,Telecom,3.1
+41,ETL-2024-0041,Technical Problems,low,closed,David Lee,2024-05-16,2024-05-18,72,63.0,0,Central,Telecom,3.9
+42,ETL-2024-0042,Customer Service Complaints,medium,closed,Carlos Ramos,2024-03-11,2024-03-17,48,160.3,1,North,Logistics,4.7
+43,ETL-2024-0043,Technical Problems,medium,assigned,John Smith,2024-01-17,,48,,0,West,Healthcare,
+44,ETL-2024-0044,Billing Issues,high,in_progress,Mike Chen,2024-03-05,,24,,0,West,Healthcare,
+45,ETL-2024-0045,Service Disruption,medium,resolved,Emily Davis,2024-12-20,2024-12-21,48,32.7,0,East,Logistics,2.8
+46,ETL-2024-0046,Delivery Delays,medium,in_progress,Sarah Johnson,2024-05-08,,48,,0,North,Healthcare,
+47,ETL-2024-0047,Customer Service Complaints,high,closed,Sarah Johnson,2024-06-23,2024-06-23,24,16.3,0,West,Banking,3.1
+48,ETL-2024-0048,Product Defects,medium,open,Emma Wilson,2024-02-07,,48,,0,Central,Banking,
+49,ETL-2024-0049,Service Disruption,critical,in_progress,Priya Patel,2024-09-28,,4,,0,Central,Retail,
+50,ETL-2024-0050,Technical Problems,high,closed,Priya Patel,2024-09-27,2024-09-27,24,22.1,0,West,Banking,4.2
+51,ETL-2024-0051,Delivery Delays,medium,escalated,Carlos Ramos,2024-06-11,,48,,0,Central,Healthcare,
+52,ETL-2024-0052,Service Disruption,critical,closed,John Smith,2024-04-07,2024-04-07,4,1.2,0,West,Telecom,2.8
+53,ETL-2024-0053,Service Disruption,critical,closed,Emily Davis,2024-06-30,2024-06-30,4,1.7,0,South,Healthcare,4.7
+54,ETL-2024-0054,Technical Problems,high,escalated,Sarah Johnson,2024-06-19,,24,,1,North,Healthcare,
+55,ETL-2024-0055,Account Issues,medium,closed,Mike Chen,2024-11-01,2024-11-01,48,20.9,0,West,Retail,3.6
+56,ETL-2024-0056,Account Issues,high,in_progress,David Lee,2024-08-21,,24,,1,East,Logistics,
+57,ETL-2024-0057,Billing Issues,medium,open,Emma Wilson,2024-04-23,,48,,0,West,Logistics,
+58,ETL-2024-0058,Technical Problems,medium,in_progress,Carlos Ramos,2024-01-21,,48,,0,East,Banking,
+59,ETL-2024-0059,Service Disruption,medium,resolved,Emma Wilson,2024-12-25,2024-12-26,48,39.1,0,West,Banking,3.5
+60,ETL-2024-0060,Billing Issues,high,closed,John Smith,2024-11-02,2024-11-02,24,3.5,0,South,Logistics,3.3
+61,ETL-2024-0061,Technical Problems,medium,pending_customer,Emily Davis,2024-08-06,,48,,1,North,Logistics,
+62,ETL-2024-0062,Account Issues,high,resolved,Mike Chen,2024-06-19,2024-06-21,24,58.5,1,East,Healthcare,4.4
+63,ETL-2024-0063,Customer Service Complaints,high,closed,David Lee,2024-01-26,2024-01-26,24,8.1,0,East,Logistics,3.5
+64,ETL-2024-0064,Delivery Delays,low,closed,Carlos Ramos,2024-12-23,2024-12-25,72,57.1,0,South,Healthcare,3.7
+65,ETL-2024-0065,Account Issues,medium,escalated,Emily Davis,2024-03-19,,48,,0,East,Retail,
+66,ETL-2024-0066,Billing Issues,critical,resolved,John Smith,2024-10-13,2024-10-13,4,2.3,0,North,Logistics,3.3
+67,ETL-2024-0067,Delivery Delays,medium,escalated,Priya Patel,2024-09-08,,48,,0,East,Banking,
+68,ETL-2024-0068,Customer Service Complaints,low,closed,Sarah Johnson,2024-08-22,2024-08-24,72,52.5,0,South,Telecom,2.7
+69,ETL-2024-0069,Customer Service Complaints,low,open,John Smith,2024-03-15,,72,,1,East,Banking,
+70,ETL-2024-0070,Customer Service Complaints,high,assigned,Mike Chen,2024-03-24,,24,,0,South,Banking,
+71,ETL-2024-0071,Billing Issues,high,in_progress,David Lee,2024-07-30,,24,,1,South,Retail,
+72,ETL-2024-0072,Delivery Delays,medium,resolved,Carlos Ramos,2024-12-10,2024-12-10,48,18.1,0,South,Banking,5.0
+73,ETL-2024-0073,Service Disruption,medium,closed,Emma Wilson,2024-12-26,2024-12-26,48,8.4,0,West,Telecom,5.0
+74,ETL-2024-0074,Billing Issues,medium,in_progress,Emily Davis,2024-02-12,,48,,0,East,Logistics,
+75,ETL-2024-0075,Technical Problems,high,escalated,Sarah Johnson,2024-08-12,,24,,1,South,Healthcare,
+76,ETL-2024-0076,Product Defects,low,escalated,Mike Chen,2024-11-18,,72,,1,Central,Banking,
+77,ETL-2024-0077,Account Issues,low,in_progress,Priya Patel,2024-08-15,,72,,0,East,Healthcare,
+78,ETL-2024-0078,Customer Service Complaints,critical,closed,David Lee,2024-01-02,2024-01-02,4,2.0,0,South,Healthcare,5.0
+79,ETL-2024-0079,Customer Service Complaints,medium,in_progress,Emma Wilson,2024-08-24,,48,,0,Central,Healthcare,
+80,ETL-2024-0080,Delivery Delays,low,closed,Carlos Ramos,2024-09-29,2024-09-29,72,13.0,0,West,Logistics,4.6
+81,ETL-2024-0081,Billing Issues,high,resolved,John Smith,2024-12-02,2024-12-02,24,6.7,0,East,Telecom,3.3
+82,ETL-2024-0082,Product Defects,high,resolved,David Lee,2024-07-21,2024-07-21,24,10.2,0,South,Telecom,4.0
+83,ETL-2024-0083,Delivery Delays,medium,escalated,Carlos Ramos,2024-01-07,,48,,0,Central,Telecom,
+84,ETL-2024-0084,Service Disruption,medium,pending_customer,Emily Davis,2024-04-05,,48,,0,South,Telecom,
+85,ETL-2024-0085,Customer Service Complaints,high,closed,Mike Chen,2024-07-27,2024-07-27,24,8.9,0,North,Retail,4.7
+86,ETL-2024-0086,Account Issues,medium,open,Sarah Johnson,2024-12-18,,48,,0,South,Telecom,
+87,ETL-2024-0087,Customer Service Complaints,low,escalated,Priya Patel,2024-01-01,,72,,0,South,Logistics,
+88,ETL-2024-0088,Account Issues,high,closed,Emma Wilson,2024-02-02,2024-02-04,24,55.7,1,North,Telecom,5.0
+89,ETL-2024-0089,Delivery Delays,critical,assigned,John Smith,2024-09-17,,4,,0,West,Logistics,
+90,ETL-2024-0090,Billing Issues,low,pending_customer,Emily Davis,2024-07-24,,72,,0,Central,Retail,
+91,ETL-2024-0091,Billing Issues,low,closed,Sarah Johnson,2024-12-02,2024-12-04,72,57.2,0,West,Telecom,3.5
+92,ETL-2024-0092,Billing Issues,medium,open,David Lee,2024-07-03,,48,,0,Central,Logistics,
+93,ETL-2024-0093,Billing Issues,medium,in_progress,Mike Chen,2024-04-20,,48,,0,West,Logistics,
+94,ETL-2024-0094,Billing Issues,high,resolved,Priya Patel,2024-01-23,2024-01-26,24,72.0,1,Central,Banking,3.9
+95,ETL-2024-0095,Service Disruption,low,resolved,Emma Wilson,2024-11-14,2024-11-15,72,34.0,0,West,Retail,3.5
+96,ETL-2024-0096,Technical Problems,low,escalated,Carlos Ramos,2024-04-05,,72,,0,West,Telecom,
+97,ETL-2024-0097,Billing Issues,high,escalated,John Smith,2024-01-14,,24,,1,East,Banking,
+98,ETL-2024-0098,Technical Problems,medium,pending_customer,Emily Davis,2024-07-18,,48,,0,North,Healthcare,
+99,ETL-2024-0099,Delivery Delays,medium,assigned,Sarah Johnson,2024-08-25,,48,,0,North,Retail,
+100,ETL-2024-0100,Service Disruption,high,closed,Mike Chen,2024-04-19,2024-04-19,24,5.4,0,West,Banking,4.0
+101,ETL-2024-0101,Delivery Delays,medium,resolved,David Lee,2024-10-12,2024-10-15,48,91.6,1,Central,Logistics,3.9
+102,ETL-2024-0102,Product Defects,medium,in_progress,Priya Patel,2024-08-01,,48,,0,East,Telecom,
+103,ETL-2024-0103,Technical Problems,low,resolved,Emma Wilson,2024-08-10,2024-08-11,72,27.9,0,South,Banking,4.5
+104,ETL-2024-0104,Technical Problems,medium,resolved,Carlos Ramos,2024-05-05,2024-05-06,48,43.1,0,West,Healthcare,4.5
+105,ETL-2024-0105,Technical Problems,medium,closed,John Smith,2024-02-10,2024-02-11,48,35.4,0,Central,Logistics,4.3
+106,ETL-2024-0106,Billing Issues,high,in_progress,Emily Davis,2024-01-06,,24,,0,North,Telecom,
+107,ETL-2024-0107,Delivery Delays,medium,resolved,Sarah Johnson,2024-08-16,2024-08-16,48,21.1,0,East,Healthcare,4.0
+108,ETL-2024-0108,Billing Issues,medium,pending_customer,Mike Chen,2024-08-19,,48,,0,East,Telecom,
+109,ETL-2024-0109,Product Defects,high,open,Priya Patel,2024-12-02,,24,,1,East,Banking,
+110,ETL-2024-0110,Delivery Delays,low,closed,Priya Patel,2024-03-04,2024-03-13,72,235.2,1,South,Banking,4.6
+111,ETL-2024-0111,Technical Problems,medium,pending_customer,David Lee,2024-08-17,,48,,0,East,Telecom,
+112,ETL-2024-0112,Customer Service Complaints,high,assigned,Emma Wilson,2024-09-14,,24,,1,North,Retail,
+113,ETL-2024-0113,Delivery Delays,low,in_progress,Carlos Ramos,2024-07-23,,72,,0,East,Telecom,
+114,ETL-2024-0114,Account Issues,high,resolved,John Smith,2024-12-06,2024-12-06,24,14.6,0,North,Healthcare,4.6
+115,ETL-2024-0115,Product Defects,medium,in_progress,Mike Chen,2024-05-13,,48,,0,West,Retail,
+116,ETL-2024-0116,Technical Problems,medium,assigned,Mike Chen,2024-04-06,,48,,1,North,Logistics,
+117,ETL-2024-0117,Customer Service Complaints,medium,closed,Emily Davis,2024-11-12,2024-11-13,48,42.5,0,South,Banking,2.4
+118,ETL-2024-0118,Service Disruption,medium,closed,Sarah Johnson,2024-03-06,2024-03-07,48,34.7,0,West,Healthcare,3.6
+119,ETL-2024-0119,Customer Service Complaints,medium,resolved,Carlos Ramos,2024-08-29,2024-08-30,48,29.8,0,Central,Retail,3.4
+120,ETL-2024-0120,Delivery Delays,high,pending_customer,David Lee,2024-02-03,,24,,0,East,Retail,
+121,ETL-2024-0121,Delivery Delays,medium,closed,Emma Wilson,2024-04-03,2024-04-03,48,22.6,0,North,Telecom,5.0
+122,ETL-2024-0122,Product Defects,critical,closed,John Smith,2024-06-15,2024-06-15,4,3.5,0,North,Healthcare,4.3
+123,ETL-2024-0123,Technical Problems,medium,closed,Mike Chen,2024-04-16,2024-04-17,48,42.5,0,East,Telecom,2.6
+124,ETL-2024-0124,Service Disruption,high,open,Emily Davis,2024-02-08,,24,,0,West,Logistics,
+125,ETL-2024-0125,Billing Issues,high,in_progress,Sarah Johnson,2024-02-12,,24,,0,West,Healthcare,
+126,ETL-2024-0126,Service Disruption,low,resolved,John Smith,2024-09-21,2024-09-22,72,26.7,0,Central,Healthcare,4.2
+127,ETL-2024-0127,Service Disruption,medium,open,Priya Patel,2024-09-22,,48,,0,Central,Banking,
+128,ETL-2024-0128,Delivery Delays,low,in_progress,David Lee,2024-07-05,,72,,0,East,Healthcare,
+129,ETL-2024-0129,Delivery Delays,medium,resolved,Emma Wilson,2024-09-03,2024-09-03,48,19.6,0,Central,Telecom,4.1
+130,ETL-2024-0130,Product Defects,critical,resolved,Carlos Ramos,2024-05-12,2024-05-12,4,8.0,1,South,Retail,2.6
+131,ETL-2024-0131,Service Disruption,high,closed,Carlos Ramos,2024-02-05,2024-02-06,24,47.0,1,Central,Logistics,4.0
+132,ETL-2024-0132,Customer Service Complaints,low,resolved,Emily Davis,2024-04-25,2024-04-26,72,42.5,0,South,Banking,3.0
+133,ETL-2024-0133,Technical Problems,high,pending_customer,Sarah Johnson,2024-08-20,,24,,0,South,Healthcare,
+134,ETL-2024-0134,Customer Service Complaints,medium,resolved,Priya Patel,2024-04-24,2024-04-24,48,22.3,0,West,Banking,3.5
+135,ETL-2024-0135,Billing Issues,medium,open,David Lee,2024-03-26,,48,,0,South,Retail,
+136,ETL-2024-0136,Product Defects,medium,in_progress,Emma Wilson,2024-07-15,,48,,0,East,Healthcare,
+137,ETL-2024-0137,Technical Problems,low,pending_customer,John Smith,2024-05-06,,72,,0,Central,Banking,
+138,ETL-2024-0138,Product Defects,medium,closed,John Smith,2024-08-28,2024-08-29,48,41.6,0,Central,Telecom,4.9
+139,ETL-2024-0139,Technical Problems,high,assigned,Emily Davis,2024-09-09,,24,,0,Central,Banking,
+140,ETL-2024-0140,Product Defects,critical,resolved,Emily Davis,2024-12-08,2024-12-08,4,3.3,0,West,Logistics,4.5
+141,ETL-2024-0141,Technical Problems,high,closed,Sarah Johnson,2024-05-03,2024-05-03,24,3.0,0,North,Retail,3.5
+142,ETL-2024-0142,Product Defects,high,pending_customer,Sarah Johnson,2024-01-30,,24,,0,South,Healthcare,
+143,ETL-2024-0143,Billing Issues,high,resolved,Mike Chen,2024-01-03,2024-01-04,24,41.4,1,Central,Logistics,4.8
+144,ETL-2024-0144,Account Issues,high,in_progress,Priya Patel,2024-09-08,,24,,1,North,Banking,
+145,ETL-2024-0145,Account Issues,high,escalated,David Lee,2024-09-15,,24,,1,West,Logistics,
+146,ETL-2024-0146,Account Issues,high,open,Emma Wilson,2024-08-19,,24,,0,South,Retail,
+147,ETL-2024-0147,Technical Problems,medium,escalated,Carlos Ramos,2024-07-08,,48,,0,South,Telecom,
+148,ETL-2024-0148,Product Defects,low,closed,Mike Chen,2024-04-17,2024-04-19,72,53.6,0,Central,Logistics,5.0
+149,ETL-2024-0149,Service Disruption,low,closed,Priya Patel,2024-10-02,2024-10-04,72,65.1,0,North,Retail,3.8
+150,ETL-2024-0150,Account Issues,critical,escalated,David Lee,2024-08-04,,4,,0,East,Banking,
+151,ETL-2024-0151,Delivery Delays,low,closed,Emma Wilson,2024-07-27,2024-07-29,72,56.2,0,West,Healthcare,3.9
+152,ETL-2024-0152,Billing Issues,medium,resolved,Carlos Ramos,2024-09-03,2024-09-04,48,41.9,0,South,Telecom,4.3
+153,ETL-2024-0153,Account Issues,high,closed,John Smith,2024-03-13,2024-03-13,24,13.1,0,East,Telecom,3.9
+154,ETL-2024-0154,Billing Issues,high,closed,Mike Chen,2024-03-28,2024-03-28,24,19.4,0,East,Healthcare,3.6
+155,ETL-2024-0155,Product Defects,medium,in_progress,Carlos Ramos,2024-11-13,,48,,1,South,Healthcare,
+156,ETL-2024-0156,Service Disruption,critical,closed,Emily Davis,2024-04-26,2024-04-26,4,3.0,0,West,Telecom,4.1
+157,ETL-2024-0157,Delivery Delays,high,assigned,Sarah Johnson,2024-12-06,,24,,0,East,Telecom,
+158,ETL-2024-0158,Technical Problems,medium,open,Priya Patel,2024-08-10,,48,,0,West,Banking,
+159,ETL-2024-0159,Account Issues,high,closed,David Lee,2024-04-02,2024-04-02,24,20.3,0,North,Telecom,3.2
+160,ETL-2024-0160,Account Issues,medium,open,Emma Wilson,2024-05-17,,48,,0,South,Telecom,
+161,ETL-2024-0161,Delivery Delays,high,closed,John Smith,2024-07-26,2024-07-26,24,4.9,0,South,Retail,3.3
+162,ETL-2024-0162,Customer Service Complaints,medium,resolved,Emily Davis,2024-12-02,2024-12-03,48,31.5,0,North,Logistics,4.4
+163,ETL-2024-0163,Product Defects,critical,resolved,Sarah Johnson,2024-04-11,2024-04-11,4,1.2,0,North,Telecom,3.6
+164,ETL-2024-0164,Product Defects,high,open,Carlos Ramos,2024-07-30,,24,,0,East,Retail,
+165,ETL-2024-0165,Technical Problems,critical,closed,Mike Chen,2024-12-10,2024-12-10,4,3.7,0,North,Healthcare,3.9
+166,ETL-2024-0166,Delivery Delays,medium,resolved,Priya Patel,2024-09-03,2024-09-04,48,42.9,0,East,Retail,4.2
+167,ETL-2024-0167,Customer Service Complaints,medium,closed,Priya Patel,2024-11-28,2024-12-04,48,151.6,1,East,Logistics,3.7
+168,ETL-2024-0168,Customer Service Complaints,critical,in_progress,David Lee,2024-12-26,,4,,1,West,Telecom,
+169,ETL-2024-0169,Product Defects,high,closed,Emma Wilson,2024-07-15,2024-07-15,24,13.3,0,Central,Telecom,3.4
+170,ETL-2024-0170,Delivery Delays,low,assigned,John Smith,2024-05-23,,72,,0,Central,Healthcare,
+171,ETL-2024-0171,Customer Service Complaints,high,resolved,Emily Davis,2024-02-11,2024-02-11,24,11.3,0,Central,Logistics,3.5
+172,ETL-2024-0172,Product Defects,high,resolved,Sarah Johnson,2024-12-14,2024-12-14,24,19.5,0,North,Logistics,3.2
+173,ETL-2024-0173,Billing Issues,critical,closed,Mike Chen,2024-02-11,2024-02-11,4,1.1,0,East,Telecom,4.6
+174,ETL-2024-0174,Billing Issues,high,in_progress,David Lee,2024-08-18,,24,,1,East,Logistics,
+175,ETL-2024-0175,Account Issues,low,in_progress,Emma Wilson,2024-06-06,,72,,0,Central,Banking,
+176,ETL-2024-0176,Delivery Delays,low,assigned,Carlos Ramos,2024-08-29,,72,,0,Central,Telecom,
+177,ETL-2024-0177,Account Issues,high,pending_customer,John Smith,2024-01-31,,24,,0,Central,Retail,
+178,ETL-2024-0178,Customer Service Complaints,low,escalated,Emily Davis,2024-09-14,,72,,0,North,Healthcare,
+179,ETL-2024-0179,Delivery Delays,high,closed,Priya Patel,2024-08-10,2024-08-10,24,18.2,0,West,Retail,3.5
+180,ETL-2024-0180,Account Issues,low,assigned,Sarah Johnson,2024-08-06,,72,,0,West,Healthcare,
+181,ETL-2024-0181,Customer Service Complaints,high,closed,Mike Chen,2024-07-11,2024-07-11,24,8.7,0,West,Banking,4.4
+182,ETL-2024-0182,Account Issues,low,closed,Emily Davis,2024-04-15,2024-04-22,72,173.1,1,South,Telecom,3.8
+183,ETL-2024-0183,Billing Issues,low,closed,David Lee,2024-12-28,2024-12-28,72,21.9,0,East,Logistics,4.1
+184,ETL-2024-0184,Product Defects,high,open,Mike Chen,2024-09-16,,24,,0,West,Healthcare,
+185,ETL-2024-0185,Product Defects,critical,resolved,Carlos Ramos,2024-01-31,2024-01-31,4,1.9,0,South,Banking,3.5
+186,ETL-2024-0186,Technical Problems,high,escalated,Emma Wilson,2024-01-10,,24,,0,West,Retail,
+187,ETL-2024-0187,Service Disruption,medium,escalated,John Smith,2024-10-14,,48,,1,East,Retail,
+188,ETL-2024-0188,Account Issues,medium,escalated,David Lee,2024-01-02,,48,,0,South,Retail,
+189,ETL-2024-0189,Customer Service Complaints,high,resolved,Sarah Johnson,2024-01-17,2024-01-17,24,13.2,0,Central,Telecom,4.2
+190,ETL-2024-0190,Service Disruption,medium,closed,Priya Patel,2024-01-12,2024-01-12,48,18.1,0,East,Banking,2.9
+191,ETL-2024-0191,Service Disruption,low,closed,Emma Wilson,2024-07-17,2024-07-20,72,87.3,1,Central,Healthcare,3.5
+192,ETL-2024-0192,Product Defects,low,assigned,Carlos Ramos,2024-11-05,,72,,0,Central,Retail,
+193,ETL-2024-0193,Product Defects,medium,in_progress,John Smith,2024-12-24,,48,,0,Central,Retail,
+194,ETL-2024-0194,Technical Problems,low,escalated,Emily Davis,2024-07-16,,72,,0,East,Healthcare,
+195,ETL-2024-0195,Service Disruption,high,closed,David Lee,2024-04-04,2024-04-04,24,13.9,0,North,Logistics,2.6
+196,ETL-2024-0196,Service Disruption,medium,in_progress,Sarah Johnson,2024-12-26,,48,,0,Central,Logistics,
+197,ETL-2024-0197,Technical Problems,low,resolved,Mike Chen,2024-01-16,2024-01-24,72,210.5,1,South,Banking,2.8
+198,ETL-2024-0198,Billing Issues,medium,resolved,Priya Patel,2024-12-04,2024-12-08,48,114.2,1,West,Banking,2.9
+199,ETL-2024-0199,Technical Problems,medium,resolved,Emma Wilson,2024-02-17,2024-02-18,48,41.0,0,North,Banking,4.6
+200,ETL-2024-0200,Billing Issues,high,closed,Carlos Ramos,2024-07-22,2024-07-22,24,9.8,0,South,Healthcare,3.0
+201,ETL-2024-0201,Account Issues,high,assigned,David Lee,2024-07-22,,24,,0,East,Logistics,
+202,ETL-2024-0202,Customer Service Complaints,critical,resolved,John Smith,2024-12-09,2024-12-09,4,1.1,0,East,Banking,4.4
+203,ETL-2024-0203,Service Disruption,critical,in_progress,Emily Davis,2024-06-16,,4,,1,East,Retail,
+204,ETL-2024-0204,Product Defects,critical,resolved,Sarah Johnson,2024-08-13,2024-08-13,4,1.7,0,East,Banking,3.7
+205,ETL-2024-0205,Service Disruption,medium,closed,Mike Chen,2024-03-23,2024-03-30,48,181.4,1,South,Banking,3.2
+206,ETL-2024-0206,Customer Service Complaints,medium,in_progress,Priya Patel,2024-11-23,,48,,1,North,Logistics,
+207,ETL-2024-0207,Account Issues,critical,in_progress,Mike Chen,2024-03-22,,4,,0,South,Banking,
+208,ETL-2024-0208,Customer Service Complaints,medium,resolved,Emma Wilson,2024-05-23,2024-05-24,48,31.6,0,South,Telecom,2.8
+209,ETL-2024-0209,Customer Service Complaints,low,closed,Sarah Johnson,2024-05-30,2024-05-31,72,35.3,0,East,Retail,3.1
+210,ETL-2024-0210,Customer Service Complaints,medium,pending_customer,Carlos Ramos,2024-01-25,,48,,1,Central,Banking,
+211,ETL-2024-0211,Product Defects,critical,open,John Smith,2024-09-30,,4,,1,South,Healthcare,
+212,ETL-2024-0212,Customer Service Complaints,low,open,Sarah Johnson,2024-11-02,,72,,0,West,Healthcare,
+213,ETL-2024-0213,Customer Service Complaints,high,in_progress,Emily Davis,2024-09-28,,24,,0,North,Telecom,
+214,ETL-2024-0214,Billing Issues,high,open,Priya Patel,2024-07-30,,24,,0,East,Healthcare,
+215,ETL-2024-0215,Technical Problems,high,closed,Carlos Ramos,2024-11-05,2024-11-05,24,11.6,0,South,Telecom,2.8
+216,ETL-2024-0216,Service Disruption,high,closed,David Lee,2024-09-21,2024-09-21,24,6.1,0,Central,Banking,3.7
+217,ETL-2024-0217,Customer Service Complaints,low,open,Emma Wilson,2024-10-29,,72,,0,West,Logistics,
+218,ETL-2024-0218,Customer Service Complaints,critical,open,John Smith,2024-05-04,,4,,0,South,Healthcare,
+219,ETL-2024-0219,Service Disruption,critical,in_progress,Emily Davis,2024-03-09,,4,,0,West,Retail,
+220,ETL-2024-0220,Service Disruption,medium,resolved,Priya Patel,2024-07-19,2024-07-24,48,143.8,1,South,Telecom,2.6
